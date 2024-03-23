@@ -1,0 +1,62 @@
+{
+  "responseData": {
+    "translatedText": "Bonjour, comment allez-vous",
+    "match": 0.98
+  },
+  "quotaFinished": false,
+  "mtLangSupported": null,
+  "responseDetails": "",
+  "responseStatus": 200,
+  "responderId": null,
+  "exception_code": null,
+  "matches": [
+    {
+      "id": "435963289",
+      "segment": "Hello, how are you",
+      "translation": "Bonjour, comment allez-vous",
+      "source": "en-GB",
+      "target": "fr-FR",
+      "quality": "74",
+      "reference": null,
+      "usage-count": 2,
+      "subject": "All",
+      "created-by": "MateCat",
+      "last-updated-by": "MateCat",
+      "create-date": "2013-10-02 19:50:39",
+      "last-update-date": "2013-10-02 19:50:39",
+      "match": 0.98
+    },
+    {
+      "id": "803894684818459847",
+      "segment": "Hello how are you",
+      "translation": "",
+      "source": "en-GB",
+      "target": "fr-FR",
+      "quality": 74,
+      "reference": null,
+      "usage-count": 2,
+      "subject": null,
+      "created-by": "Public Web",
+      "last-updated-by": "Public Web",
+      "create-date": "2023-06-11 11:28:04",
+      "last-update-date": "2023-06-11 11:28:04",
+      "match": 0.97
+    },
+    {
+      "id": "803894684855682920",
+      "segment": "Hello, how are you?",
+      "translation": "Bonjour, comment vas-tu?",
+      "source": "en-GB",
+      "target": "fr-FR",
+      "quality": 0,
+      "reference": null,
+      "usage-count": 2,
+      "subject": "All",
+      "created-by": "MateCat",
+      "last-updated-by": "MateCat",
+      "create-date": "2024-03-04 11:58:17",
+      "last-update-date": "2024-03-04 11:58:17",
+      "match": 0.96
+    }
+  ]
+}

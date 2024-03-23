@@ -1,0 +1,13 @@
+.usr-background {
+    background-image: url('img/hero_img.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.interchange:hover svg {
+    fill: #F9FAFB;
+}
+
+.usr-stroke:hover svg {
+    stroke: #F9FAFB;
+}
