@@ -1,7 +1,7 @@
 import { ReactNode, type FC } from 'react'
 import { HorizontalArrowIcon } from '../assets/HorizontalArrowIcon'
-import { FormType, Store } from '../types.d'
-import { AVAILABLE_LANGUAGES } from '../constants'
+import { FormType, Languages, Store } from '../types.d'
+import { AVAILABLE_LANGUAGES, SOURCE_LANGUAGES } from '../constants'
 
 interface LanguageSelectorProps {
   type: FormType
@@ -35,12 +35,12 @@ export const LanguageSelector: FC<LanguageSelectorProps> = ({ type, store }) => 
   }
 
   const languages = type === FormType.source
-    ? { auto: 'Detect language', ...AVAILABLE_LANGUAGES }
+    ? SOURCE_LANGUAGES
     : AVAILABLE_LANGUAGES
 
   const currentLanguage = type === FormType.source ? store.sourceLanguage : store.targetLanguage
 
-  const handleClick = (e) => {
+  const handleClick = (e: Languages): void => {
     if (type === FormType.source) {
       store.setSourceLanguage(e)
     } else {
@@ -51,7 +51,7 @@ export const LanguageSelector: FC<LanguageSelectorProps> = ({ type, store }) => 
   return (
     <ul className='flex flex-row gap-4 border-b-[1px] border-borderForm pb-3 mx-2'>
       {
-        Object.keys(languages).map(e => (
+        (Object.keys(languages) as Languages[]).map(e => (
           <Button
             key={e}
             active={currentLanguage === e}
