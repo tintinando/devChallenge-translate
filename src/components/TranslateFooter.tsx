@@ -4,6 +4,8 @@ import CopyIcon from '../assets/CopyIcon'
 import { SortAlfa } from '../assets/SortAlfa'
 import { FormType, Store } from '../types.d'
 
+/* eslint-disable @typescript-eslint/no-misused-promises */
+
 interface Props {
   store: Store
   type: FormType
@@ -58,7 +60,9 @@ export const TranslateFooter: FC<Props> = ({ store, type }) => {
       <Button onClick={handleSpeech}>
         <SoundIcon />
       </Button>
-      <Button onClick={handleCopy}>
+      <Button
+        onClick={handleCopy}
+      >
         <CopyIcon />
       </Button>
 
